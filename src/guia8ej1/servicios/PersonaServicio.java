@@ -23,6 +23,9 @@ y la función devuelve un -1. Si la fórmula da por resultado un número entre 2
 significa que la persona está en su peso ideal y la función devuelve un 0.
 Finalmente, si el resultado de la fórmula es un valor mayor que 25 significa que la persona tiene sobrepeso,
 y la función devuelve un 1.
+/*Por último, guardaremos los resultados de los métodos calcularIMC y esMayorDeEdad en distintas variables(arrays),
+para después calcular un porcentaje de esas 4 personas cuantas están por debajo de su peso, cuantas en su peso ideal y cuantos, por encima,
+y también calcularemos un porcentaje de cuantos son mayores de edad y cuantos menores. Para esto, podemos crear unos métodos adicionales.
 
 /**
  *
@@ -32,8 +35,6 @@ public class PersonaServicio {
 Scanner leer = new Scanner(System.in);
 public boolean esMayorDeEdad(Persona datos){
     boolean edad;
-    System.out.println("Ingrese la edad de la persona");
-    datos.setEdad(leer.nextInt());
     if(datos.getEdad()>=18){
         edad=true;
     }else{

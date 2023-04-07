@@ -19,7 +19,6 @@ y la función devuelve un -1. Si la fórmula da por resultado un número entre 2
 significa que la persona está en su peso ideal y la función devuelve un 0.
 Finalmente, si el resultado de la fórmula es un valor mayor que 25 significa que la persona tiene sobrepeso,
 y la función devuelve un 1.
-
 /**
  *
  * @author PC
@@ -81,6 +80,6 @@ public class Persona {
     public void setAltura(double altura) {
         this.altura = altura;
     }
-   
-   
+
+
 }
